@@ -9,6 +9,7 @@ on:
 
 jobs:
   publish-nextjs-image:
+    permissions: write-all
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v3

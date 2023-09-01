@@ -1,0 +1,34 @@
+name: Publish sxastarter image 
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'rendering/**'
+
+jobs:
+  publish-sxastarter-image:
+    permissions: write-all
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}     
+ 
+
+      - name: Build SXA Starter Docker image
+        run: |
+          docker build ./rendering `
+            --tag sitecore-sxastarter:10.3 `
+            --build-arg PARENT_IMAGE=ghcr.io/ampach/sitecore-nextjs:18.14.2 `
+          
+          docker tag sitecore-sxastarter:10.3 ghcr.io/ampach/sitecore-sxastarter:10.3
+          docker push ghcr.io/ampach/sitecore-sxastarter:10.3

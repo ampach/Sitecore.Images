@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}     
  
 
-      - name: Build CM Docker image
+      - name: Build NextJS Docker image
         run: |
           docker build ./nextjs `
             --tag sitecore-nextjs:18.14.2 `

@@ -8,8 +8,8 @@ on:
       - 'nextjs/**'
 
 jobs:
-  publish-hello-docker-image:
-    runs-on: ubuntu-latest
+  publish-nextjs-image:
+    runs-on: windows-2019
     steps:
       - uses: actions/checkout@v3
         with:

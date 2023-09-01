@@ -2,10 +2,12 @@
 
 #FROM ${PARENT_IMAGE} as dependencies
 FROM ${PARENT_IMAGE} as builder
+USER ContainerAdministrator
 WORKDIR /app
 COPY . .
 COPY package.json ./
 RUN npm install
+USER ContainerUser
 
 #FROM ${PARENT_IMAGE} as builder
 #WORKDIR /app

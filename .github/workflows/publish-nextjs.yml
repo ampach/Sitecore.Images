@@ -1,6 +1,7 @@
 name: Publish nextjs image 
 on:
-  workflow_call: {}
+  workflow_call: 
+    inputs: {}
   push:
     branches:
       - 'main'

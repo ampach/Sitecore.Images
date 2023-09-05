@@ -41,4 +41,4 @@ USER ContainerUser
 
 EXPOSE 80
 EXPOSE 443
-ENTRYPOINT ["powershell.exe", "npm run start:production"]
+ENTRYPOINT ["cmd", "npm run start:production"]

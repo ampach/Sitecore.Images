@@ -27,9 +27,9 @@ jobs:
       - name: Build NextJS Docker image
         run: |
           docker build ./nextjs `
-            --tag sitecore-nextjs:18.14.2-1 `
-            --build-arg PARENT_IMAGE=mcr.microsoft.com/windows/nanoserver:ltsc2022 `
+            --tag sitecore-nextjs:18.14.2-2 `
+            --build-arg PARENT_IMAGE=mcr.microsoft.com/windows/servercore:ltsc2022 `
             --build-arg NODEJS_VERSION=18.14.2 `            
           
-          docker tag sitecore-nextjs:18.14.2-1 ghcr.io/ampach/sitecore-nextjs:18.14.2-1
-          docker push ghcr.io/ampach/sitecore-nextjs:18.14.2-1
+          docker tag sitecore-nextjs:18.14.2-2 ghcr.io/ampach/sitecore-nextjs:18.14.2-2
+          docker push ghcr.io/ampach/sitecore-nextjs:18.14.2-2

@@ -27,8 +27,8 @@ jobs:
       - name: Build SXA Starter Docker image
         run: |
           docker build ./rendering `
-            --tag sitecore-sxastarter:10.3-1 `
-            --build-arg PARENT_IMAGE=ghcr.io/ampach/sitecore-nextjs:18.14.2-1 `
+            --tag sitecore-sxastarter:10.3-2 `
+            --build-arg PARENT_IMAGE=ghcr.io/ampach/sitecore-nextjs:18.14.2-2 `
           
-          docker tag sitecore-sxastarter:10.3-1 ghcr.io/ampach/sitecore-sxastarter:10.3-1
-          docker push ghcr.io/ampach/sitecore-sxastarter:10.3-1
+          docker tag sitecore-sxastarter:10.3-2 ghcr.io/ampach/sitecore-sxastarter:10.3-2
+          docker push ghcr.io/ampach/sitecore-sxastarter:10.3-2

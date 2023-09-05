@@ -41,4 +41,4 @@ USER ContainerUser
 
 EXPOSE 80
 EXPOSE 443
-ENTRYPOINT ["cmd", "npm run start:production"]
+ENTRYPOINT ["npm run start:production"]

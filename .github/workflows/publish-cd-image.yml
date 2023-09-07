@@ -1,0 +1,37 @@
+name: Publish CD image 
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'cd/**'
+
+jobs:
+  publish-nextjs-image:
+    permissions: write-all
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}     
+ 
+
+      - name: Build CD Docker image
+        run: |
+          docker build ./cd `
+            --tag sitecore-cd-sxa-spe-jss:10.3-ltsc2022 `
+            --build-arg HEADLESS_SERVICES_IMAGE=scr.sitecore.com/sxp/modules/sitecore-headless-services-xm1-assets:21.0.587-ltsc2022 `
+            --build-arg TOOLS_IMAGE=scr.sitecore.com/tools/sitecore-docker-tools-assets:10.3.0-ltsc2022 `
+            --build-arg SXA_IMAGE=scr.sitecore.com/sxp/modules/sitecore-sxa-xm1-assets:10.3-ltsc2022 `
+            --build-arg PARENT_IMAGE=scr.sitecore.com/sxp/sitecore-xm1-cm:10.3-ltsc2022
+          
+          docker tag sitecore-cd-sxa-spe-jss:10.3-ltsc2022 ghcr.io/ampach/sitecore-cd-sxa-spe-jss:10.3-ltsc2022
+          docker push ghcr.io/ampach/sitecore-cd-sxa-spe-jss:10.3-ltsc2022

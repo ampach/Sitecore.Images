@@ -10,7 +10,7 @@ on:
 jobs:
   publish-sxastarter-image:
     permissions: write-all
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,8 +27,8 @@ jobs:
       - name: Build SXA Starter Docker image
         run: |
           docker build ./rendering `
-            --tag sitecore-sxastarter:10.3 `
-            --build-arg PARENT_IMAGE=ghcr.io/ampach/sitecore-nextjs:18.14.2 `
+            --tag sitecore-sxastarter:10.3-2 `
+            --build-arg PARENT_IMAGE=ghcr.io/ampach/sitecore-nextjs:18.14.2-2 `
           
-          docker tag sitecore-sxastarter:10.3 ghcr.io/ampach/sitecore-sxastarter:10.3
-          docker push ghcr.io/ampach/sitecore-sxastarter:10.3
+          docker tag sitecore-sxastarter:10.3-2 ghcr.io/ampach/sitecore-sxastarter:10.3-2
+          docker push ghcr.io/ampach/sitecore-sxastarter:10.3-2

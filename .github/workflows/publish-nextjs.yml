@@ -10,7 +10,7 @@ on:
 jobs:
   publish-nextjs-image:
     permissions: write-all
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,9 +27,9 @@ jobs:
       - name: Build NextJS Docker image
         run: |
           docker build ./nextjs `
-            --tag sitecore-nextjs:18.14.2 `
-            --build-arg PARENT_IMAGE=mcr.microsoft.com/windows/nanoserver:1809 `
+            --tag sitecore-nextjs:18.14.2-2 `
+            --build-arg PARENT_IMAGE=mcr.microsoft.com/windows/servercore:ltsc2022 `
             --build-arg NODEJS_VERSION=18.14.2 `            
           
-          docker tag sitecore-nextjs:18.14.2 ghcr.io/ampach/sitecore-nextjs:18.14.2
-          docker push ghcr.io/ampach/sitecore-nextjs:18.14.2
+          docker tag sitecore-nextjs:18.14.2-2 ghcr.io/ampach/sitecore-nextjs:18.14.2-2
+          docker push ghcr.io/ampach/sitecore-nextjs:18.14.2-2

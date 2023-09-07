@@ -27,10 +27,10 @@ jobs:
       - name: Build MSSQL-INIT Docker image
         run: |
           docker build ./mssql-init `
-            --tag sitecore-sxa-spe-jss:10.3-ltsc2022 `
-            --build-arg HEADLESS_SERVICES_IMAGE=scr.sitecore.com/sxp/modules/sitecore-sxa-xm1-assets:10.3-ltsc2022 `
+            --tag sitecore-mssql-init-sxa-spe-jss:10.3-ltsc2022 `
+            --build-arg HEADLESS_SERVICES_IMAGE=scr.sitecore.com/sxp/modules/sitecore-headless-services-xm1-assets:21.0.587-ltsc2022 `
             --build-arg SPE_IMAGE=scr.sitecore.com/sxp/modules/sitecore-spe-assets:6.4.0.65-ltsc2022 `
             --build-arg PARENT_IMAGE=scr.sitecore.com/sxp/sitecore-xm1-mssql-init:10.3-ltsc2022
           
-          docker tag sitecore-nextjs:10.3-ltsc2022 ghcr.io/ampach/sitecore-nextjs:10.3-ltsc2022
-          docker push ghcr.io/ampach/sitecore-nextjs:10.3-ltsc2022
+          docker tag sitecore-mssql-init-sxa-spe-jss:10.3-ltsc2022 ghcr.io/ampach/sitecore-mssql-init-sxa-spe-jss:10.3-ltsc2022
+          docker push ghcr.io/ampach/sitecore-mssql-init-sxa-spe-jss:10.3-ltsc2022

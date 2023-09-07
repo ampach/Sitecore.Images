@@ -8,7 +8,7 @@ on:
       - 'mssql-init/**'
 
 jobs:
-  publish-nextjs-image:
+  publish-mssql-init-image:
     permissions: write-all
     runs-on: windows-2022
     steps:

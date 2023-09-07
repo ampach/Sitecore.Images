@@ -41,5 +41,3 @@ RUN C:\module\tools\Initialize-Content.ps1 -TargetPath C:\inetpub\wwwroot; `
 
 
 ARG ENVIRONMENT
-
-RUN Remove-Item -Path C:\inetpub\wwwroot\App_Config\Modules\SXA\Z.LayoutService\Sitecore.LayoutService.config -Force;

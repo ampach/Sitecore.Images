@@ -8,7 +8,7 @@ on:
       - 'solr-init/**'
 
 jobs:
-  publish-nextjs-image:
+  publish-solr-init-image:
     permissions: write-all
     runs-on: windows-2022
     steps:

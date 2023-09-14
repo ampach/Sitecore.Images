@@ -8,7 +8,7 @@ on:
       - 'cm/**'
 
 jobs:
-  publish-nextjs-image:
+  publish-cm-image:
     permissions: write-all
     runs-on: windows-2022
     steps:

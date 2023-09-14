@@ -8,7 +8,7 @@ on:
       - 'solr-init/**'
 
 jobs:
-  publish-nextjs-image:
+  publish-solr-init-image:
     permissions: write-all
     runs-on: windows-2022
     steps:
@@ -29,7 +29,7 @@ jobs:
           docker build ./solr-init `
             --tag sitecore-solr-init-sxa-spe-jss:10.3-ltsc2022 `
             --build-arg SXA_IMAGE=scr.sitecore.com/sxp/modules/sitecore-sxa-xm1-assets:10.3-ltsc2022 `
-            --build-arg PARENT_IMAGE=scr.sitecore.com/sxp/sitecore-xm1-mssql-init:10.3-ltsc2022
+            --build-arg PARENT_IMAGE=scr.sitecore.com/sxp/sitecore-xm1-solr-init:10.3-ltsc2022
           
           docker tag sitecore-solr-init-sxa-spe-jss:10.3-ltsc2022 ghcr.io/ampach/sitecore-solr-init-sxa-spe-jss:10.3-ltsc2022
           docker push ghcr.io/ampach/sitecore-solr-init-sxa-spe-jss:10.3-ltsc2022

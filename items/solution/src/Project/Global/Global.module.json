@@ -1,0 +1,105 @@
+{
+  "namespace": "Project.Global",
+  "items": {
+    "includes": [
+      {
+        "name": "layouts",
+        "path": "/sitecore/layout/Layouts/Project/BaseShop"
+      },
+      {
+        "name": "placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Project/BaseShop"
+      },
+      {
+        "name": "branches",
+        "path": "/sitecore/templates/Branches/Project/BaseShop"
+      },
+      {
+        "name": "api-key",
+        "path": "/sitecore/system/Settings/Services/API Keys/Velux"
+      },
+      {
+        "name": "media folder",
+        "path": "/sitecore/media library/BaseShop"
+      },
+      {
+        "name": "insert options",
+        "path": "/sitecore/system/Settings/Rules/Insert Options/Rules",
+        "rules": [
+          {
+            "path": "/BaseShop",
+            "scope": "SingleItem"
+          },
+          {
+            "path": "/PageComponentsFolder",
+            "scope": "SingleItem"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "list manager",
+        "path": "/sitecore/system/List Manager",
+        "rules": [
+          {
+            "path": "/BaseShop",
+            "scope": "ItemAndDescendants",
+            "allowedPushOperations": "CreateUpdateAndDelete"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "languages",
+        "path": "/sitecore/system/Languages",
+        "rules": [
+          {
+            "path": "/en",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "content",
+        "path": "/sitecore/content/Shops/BaseShop",
+        "rules": [
+          {
+            "path": "/Home",
+            "scope": "ItemAndDescendants"
+          },
+          {
+            "path": "/Shared Components",
+            "scope": "ItemAndDescendants"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/Settings",
+            "scope": "ItemAndDescendants"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "checkout",
+        "path": "/sitecore/content/Checkout"
+      },
+      {
+        "name": "catalog",
+        "path": "/sitecore/content/Catalog"
+      }
+    ]
+  }
+}

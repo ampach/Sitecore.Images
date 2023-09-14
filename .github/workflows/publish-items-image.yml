@@ -1,0 +1,34 @@
+name: Publish ITEMS image 
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'items/**'
+
+jobs:
+  publish-items-image:
+    permissions: write-all
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}     
+ 
+
+      - name: Build Items Docker image
+        run: |
+          docker build ./items `
+            --tag sitecore-items:1.0.0 `
+            --build-arg PARENT_IMAGE=mcr.microsoft.com/windows/servercore:ltsc2022
+          
+          docker tag sitecore-items:1.0.0 ghcr.io/ampach/sitecore-items:1.0.0
+          docker push ghcr.io/ampach/sitecore-items:1.0.0

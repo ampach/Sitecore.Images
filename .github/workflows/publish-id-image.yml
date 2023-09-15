@@ -27,6 +27,7 @@ jobs:
         shell: pwsh
         run: |
           (Get-Content ./id/Config/Sitecore.IdentityServer.ClientID.xml) -replace '{client-name}', '${{ secrets.SITECORE_IDENTITY_CLIENT_NAME }}' -replace '{client-secret}', '${{ secrets.SITECORE_IDENTITY_CLIENT_SECRET }}' | Set-Content -Path ./id/Config/Sitecore.IdentityServer.ClientID.xml -Force
+          (Get-Content ./id/Config/production/Sitecore.IdentityServer.ClientID.xml) -replace '{client-name}', '${{ secrets.SITECORE_IDENTITY_CLIENT_NAME }}' -replace '{client-secret}', '${{ secrets.SITECORE_IDENTITY_CLIENT_SECRET }}' | Set-Content -Path ./id/Config/production/Sitecore.IdentityServer.ClientID.xml -Force
       
       - name: Build ID Docker image
         run: |

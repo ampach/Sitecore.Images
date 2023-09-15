@@ -1,0 +1,13 @@
+﻿---
+ID: "03bfc63b-c6ac-41f7-a995-efb70e606900"
+Parent: "c46544b8-0c0e-445d-a326-e72e8b0e7986"
+Template: "c46544b8-0c0e-445d-a326-e72e8b0e7986"
+Path: /sitecore/templates/Project/Demo/Headless Site/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6700a12e-7af8-41f7-9ad9-7474d0dc9291"

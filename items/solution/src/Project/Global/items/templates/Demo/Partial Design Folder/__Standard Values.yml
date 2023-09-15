@@ -1,0 +1,19 @@
+﻿---
+ID: "d0a7a0b9-d0fe-41e4-b924-4855eed2e1e2"
+Parent: "b00992b5-1bf4-43b3-ae34-ba226627fbc1"
+Template: "b00992b5-1bf4-43b3-ae34-ba226627fbc1"
+Path: /sitecore/templates/Project/Demo/Partial Design Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {B00992B5-1BF4-43B3-AE34-BA226627FBC1}
+    {FD2059FD-6043-4DFE-8C04-E2437CE87634}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "37714447-3e42-4763-a58d-d2f91ebdde02"

@@ -1,0 +1,13 @@
+﻿---
+ID: "8c935493-697c-488f-9c2e-bacdcc65b9f5"
+Parent: "1536a854-7c4f-49ab-898b-b569f8b1db16"
+Template: "c14bf746-030f-4e59-8594-395f6d299e61"
+Path: /sitecore/content/Demo/Global/Settings/Shared Sites Settings
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c6a0b443-cf04-4e8f-9d7d-4ae3987e7d01"

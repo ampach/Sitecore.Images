@@ -1,0 +1,13 @@
+﻿---
+ID: "36256243-403e-436c-ab84-519c5c53bc24"
+Parent: "472e0677-9bc2-4cf8-bd58-1215b7b6175d"
+Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
+Path: /sitecore/content/Demo/Global/Presentation/Page Branches
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "94e5a4bd-18e0-4abf-91c3-599e0d60279a"

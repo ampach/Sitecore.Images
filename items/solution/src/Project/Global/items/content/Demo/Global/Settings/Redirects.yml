@@ -1,0 +1,13 @@
+﻿---
+ID: "d2d720c7-5641-4112-b225-dccd06b3b175"
+Parent: "1536a854-7c4f-49ab-898b-b569f8b1db16"
+Template: "c2dc4690-af44-48c7-bb21-90d1ad246732"
+Path: /sitecore/content/Demo/Global/Settings/Redirects
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f393e9de-2e43-443e-9bf7-8529dbcafea7"

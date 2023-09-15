@@ -1,0 +1,21 @@
+﻿---
+ID: "2119ace7-4be7-4945-8c30-74d746614409"
+Parent: "74e2d5a6-ca03-48db-8f37-c3be940f6264"
+Template: "d885df8c-b2d6-4007-b34b-2bbafb527304"
+Path: /sitecore/content/Demo/Global/Home/Data/Image 2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "57caf172-ce57-4e48-b3a1-46f8aea71c08"
+      Hint: Image
+      Value: |
+        <image mediaid="{D2F3DF85-EE8B-4112-8B2D-D4670685CEEA}" />
+    - ID: "75fbf1b1-e7c5-494b-9633-693909f79425"
+      Hint: TargetUrl
+      Value: |
+        <link linktype="internal" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "84c2d6c0-6afb-4591-b706-1a8764950929"

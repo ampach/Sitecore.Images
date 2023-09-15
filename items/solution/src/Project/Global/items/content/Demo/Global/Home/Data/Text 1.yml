@@ -1,0 +1,24 @@
+﻿---
+ID: "866cc330-d784-49b7-98fe-2e8d310d12b6"
+Parent: "74e2d5a6-ca03-48db-8f37-c3be940f6264"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: /sitecore/content/Demo/Global/Home/Data/Text 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h1 style="background-color: #ffffff; text-align: justify; line-height: 22px;font-family: 'Open Sans', Arial, sans-serif;">Sitecore Experience Platform</h1>
+        <p style="background-color: #ffffff; text-align: justify; line-height: 22px;">&nbsp;</p>
+        <p style="background-color: #ffffff; text-align: justify; line-height: 22px; font-family: 'Open Sans', Arial, sans-serif;">From a single connected platform that also integrates with other customer-facing platforms, to a single view of the customer in a big data marketing repository, to completely eliminating much of the complexity that has previously held marketers back, the latest version of Sitecore makes customer experience highly achievable. Learn how the latest version of Sitecore gives marketers the complete data, integrated tools, and automation capabilities to engage customers throughout an iterative lifecycle &ndash; the technology foundation absolutely necessary to win customers for life.</p>
+        <p style="background-color: #ffffff; text-align: justify;">For further information, please go to the&nbsp;<a rel="noopener noreferrer" href="https://doc.sitecore.net/" target="_blank" title="Sitecore Documentation site">Sitecore Documentation site</a></p>
+        <p style="background-color: #ffffff; text-align: justify;">&nbsp;</p>
+        <hr />
+        <p>&nbsp;</p>
+        <p style="background-color: #ffffff; text-align: justify;"><span style="background-color: #ffffff; font-family: 'Open Sans', Arial, sans-serif;">&copy; 2023 Sitecore</span></p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6a4220d0-3880-4892-89ff-2edbcdafc009"

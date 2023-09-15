@@ -1,0 +1,13 @@
+﻿---
+ID: "987d8b36-b972-43d2-8171-e7580dda80a9"
+Parent: "e68edc6d-4cd0-429d-91e9-4b7d96348558"
+Template: "9c2d0fdf-4daf-4494-bde7-f857f1924825"
+Path: /sitecore/content/Demo/Global/Data/Navigation Filters
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d792697f-cd6a-4396-b9cf-ce70332c25f5"

@@ -1,0 +1,13 @@
+﻿---
+ID: "f74448f7-00cc-4302-b104-36e9f37809ec"
+Parent: "e68edc6d-4cd0-429d-91e9-4b7d96348558"
+Template: "c237d144-647a-4afe-aa7b-1570f3e3f139"
+Path: /sitecore/content/Demo/Global/Data/Link Lists
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "77b56f91-ac45-4c99-8313-6b1bf672d55d"

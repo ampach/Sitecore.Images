@@ -1,0 +1,19 @@
+﻿---
+ID: "59b41b5f-e22e-460b-941e-fb64fe8da8fc"
+Parent: "336ea77a-3587-499f-8238-61bde34601fc"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Services/API Keys
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {A6868D65-D612-401F-A40A-CD5BA0857B81}
+    {E642EF3A-ACF4-4238-B847-CE504C1E9780}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3a682a9d-37cb-4e91-a574-4f122a90ffef"

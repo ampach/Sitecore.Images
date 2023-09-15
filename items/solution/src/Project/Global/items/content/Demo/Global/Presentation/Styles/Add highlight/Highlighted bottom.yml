@@ -1,0 +1,37 @@
+﻿---
+ID: "8a4ff37b-1076-4ebb-917d-2dd39f2f2e1a"
+Parent: "5d93715d-5a1d-4975-895e-79869b1e84c4"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: /sitecore/content/Demo/Global/Presentation/Styles/Add highlight/Highlighted bottom
+BranchID: "75653e9d-3c5c-45d4-823d-1bb04474400b"
+SharedFields:
+- ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"
+  Hint: Value
+  Value: "highlighted-bottom"
+- ID: "39816442-74d9-4ce2-beb3-128b204efd40"
+  Hint: Icon
+  Value: "highlight-bottom"
+- ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
+  Hint: Allowed Renderings
+  Value: |
+    {9C6D53E3-FE57-4638-AF7B-6D68304C7A94}
+    {C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}
+    {2492BAC4-DA07-4C86-87F0-9873D40E2276}
+    {7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}
+- ID: "95579875-484e-41f0-b9c2-804eafaf3ccc"
+  Hint: IsVerifiedStyle
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 4162
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A41EE12F-948E-46B3-B6F3-1FFE33C50CF0}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9829e880-e06c-4526-a5a9-6cb7fcedd3c9"

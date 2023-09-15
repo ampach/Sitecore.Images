@@ -35,7 +35,6 @@ function SyncContent($idHost, $cmHost, $clientSecret, $clientName) {
     try {
         # Add nuget source & install Sitecore CLI
         Write-Host "Installing Sitecore CLI"
-
         
         dotnet nuget add source https://sitecore.myget.org/F/sc-packages/api/v3/index.json --name "Sitecore-Public-Nuget-Feed"
         dotnet tool install -g sitecore.cli --version 5.1.25 --add-source https://sitecore.myget.org/F/sc-packages/api/v3/index.json
@@ -45,21 +44,6 @@ function SyncContent($idHost, $cmHost, $clientSecret, $clientName) {
         # Login to ID Server
         Write-Host "Logging into ID Server"
         dotnet sitecore login --client-credentials true --auth $idHost --cm $cmHost --allow-write true --client-id $clientName --client-secret $clientSecret --insecure
-
-        Write-Host "Installing Item Packages:"
-        Get-ChildItem ".\SitecorePackages" -Filter *.itempackage | 
-        Foreach-Object {
-            $name = $_.BaseName
-            Write-Host "Installing $name package."
-            try {
-                dotnet sitecore ser pkg install -f $_.FullName
-            }
-            catch {
-                Write-Host "Failed to install $name package."
-                Write-Host $_
-            }
-            
-        }               
 
         # Deserialize Content
         Write-Host "Push Content"

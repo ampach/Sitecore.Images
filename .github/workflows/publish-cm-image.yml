@@ -22,7 +22,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}     
- 
+
+      - name: Replace tokens
+        shell: pwsh
+        run: |
+          (Get-Content ./cm/App_Config/Include/Sitecore.Owin.Authentication.ClientCredentialsMapping.Mvp.config) -replace '{client-name}', '${{ secrets.SITECORE_IDENTITY_CLIENT_NAME }}' | Set-Content -Path ./cm/App_Config/Include/Sitecore.Owin.Authentication.ClientCredentialsMapping.Mvp.config -Force
 
       - name: Build CM Docker image
         run: |

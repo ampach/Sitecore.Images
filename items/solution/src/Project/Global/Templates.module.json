@@ -1,0 +1,11 @@
+{
+  "namespace": "Project.Templates",
+  "items": {
+    "includes": [      
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Project/Demo"
+      }
+    ]
+  }
+}
